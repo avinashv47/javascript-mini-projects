@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jersey 20', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.year {
+    font-size: 70px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.countdown {
+    display: flex;
+    transform: scale(2);
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.time h2 {
+    margin: 0 0 5px;
+}
+
+@media(max-width: 500px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .countdown {
+        transform: scale(1.5);
+    }
+}
+
